@@ -125,6 +125,11 @@ main{
             color: white;
             text-align: center;
             font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .shortenIt:hover{
+            opacity: 0.7;
         }
     }
 
@@ -151,7 +156,7 @@ main{
    
    .card{
     background: white;
-    padding: 1.5rem;
+    padding: 1rem;
     margin: 4rem 0 1.5rem 0;
     display: flex;
     flex-direction: column;
@@ -159,12 +164,15 @@ main{
     p {
         font-size: .9rem;
     color: $grayishViolet;
-    margin-bottom: 1.5rem;
+    
     }
     h3{
         margin-bottom: 1.5rem;
     }
     .icons-container{
+        width: 10rem;
+    }
+    .icons{
         position: relative;
         z-index: 3;
         top: -3rem;
@@ -173,9 +181,88 @@ main{
         padding: 0.8rem;
         width: 35%;
 
-        .icons{
-            height: 2rem;
-        }
+        
     }
    }
+   .card1::after,.card2:after{
+    content: "";
+    background-color: $cyan;
+    width: 5px;
+    height: 60px;
+    position: relative;
+    top: 4.8rem;
+   }
+   .card3{
+    padding-bottom: 5rem;
+   }
+}
+
+section.boost{
+    position: relative;
+    top: -81px;
+    padding: 2rem;
+    height: 12rem;
+    text-align: center;
+    font-size: 15px;
+   background: url('/images/bg-boost-mobile.svg') no-repeat;
+   background-position: right;
+   background-size: contain;
+   background-color: $darkViolet;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   color: white;
+   gap: 1rem;
+
+   button{
+    border: none;
+    text-decoration: none;
+    padding: .5rem;
+    width: 100px;
+    border-radius: 20px;
+    font-size: .8rem;
+    background-color: $cyan;
+    color: white;
+   }
+}
+
+footer{
+    background-color:$veryDarkViolet;
+    text-align: center;
+    padding: 2rem;
+    margin-top: -5.1rem;
+    color: white;
+    .logo{
+        font-size: 2rem;
+        font-weight: 700;
+       
+    }
+    .Features{
+        margin-top: 3rem;
+    }
+    h5{
+        margin-bottom: 1.5rem;
+    }
+    ul{
+        margin-bottom: 2rem;
+    }
+    h5,li{
+        font-size: 13px;
+    }
+
+    li{
+        list-style: none;
+        color: $grayishViolet;
+        margin-bottom: .3rem;
+    }
+}
+.sm-icons{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    *{
+        margin-right: 1rem;
+    }
 }
