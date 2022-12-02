@@ -77,6 +77,10 @@ main{
         gap: 1rem;
         h1{
             line-height: 2rem;
+            color: $veryDarkBlue;
+        }
+        p{
+            color: $gray;
         }
     }
 
@@ -90,8 +94,36 @@ main{
         color: white;
         cursor: pointer;
         transition: 0.3s ease-in-out;
+        
     }
     .getStarted:hover{
         background-color: $darkViolet;
     }
+
+    .shortlink-container{
+        border-radius: .4rem;
+        gap: 2rem;
+        background: url('/images/bg-shorten-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: 100% 0px;
+        background-size: 56%;
+        background-color: $darkViolet;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 90%;
+        *{
+            padding: .6rem;
+            border-radius: .2rem;
+            border: none;
+        }
+        .shortenIt{
+            background-color: $cyan;
+            color: white;
+            text-align: center;
+            font-weight: 600;
+        }
+    }
+
+
 }
