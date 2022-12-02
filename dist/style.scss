@@ -58,10 +58,13 @@ main{
         align-items: center;
         flex-direction: column-reverse;
         
-
+        .img-container{
+            padding-left: 1rem;
         img{
             width: 100%;
+   
         }
+    }
     }
     
     .headline-text{

@@ -45,7 +45,10 @@ main .headline {
   align-items: center;
   flex-direction: column-reverse;
 }
-main .headline img {
+main .headline .img-container {
+  padding-left: 1rem;
+}
+main .headline .img-container img {
   width: 100%;
 }
 main .headline-text {
