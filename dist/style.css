@@ -19,15 +19,64 @@ nav {
 }
 nav .functions {
   position: absolute;
+  z-index: 20;
   display: none;
   flex-direction: column;
   align-items: center;
   width: 88%;
   right: 6%;
   top: 70px;
-  background-color: white;
-  outline: 2px solid blue;
-  padding: 50% 0;
+  background-color: hsl(257deg, 27%, 26%);
+  padding: 15% 0;
+  text-align: center;
+  border-radius: 10px;
+}
+nav .functions * {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+nav .functions .button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+nav .functions .button-container button {
+  padding: 0.5rem;
+  text-align: center;
+  padding: 2% 35%;
+  color: white;
+  font-weight: 500;
+}
+nav .functions .button-container :nth-child(1) {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+nav .functions .button-container :nth-child(2) {
+  background-color: hsl(180deg, 66%, 49%);
+  border-radius: 20px;
+  border: none;
+  transition: ease-in-out 0.3s;
+}
+nav .functions .button-container :nth-child(2):hover {
+  background-color: hsl(260deg, 8%, 14%);
+}
+nav .functions li {
+  list-style: none;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+nav hr {
+  width: 90%;
+  margin: 1.6rem 0;
+  color: hsl(0deg, 0%, 75%);
+  height: 1px;
+}
+nav .functions.active {
+  display: flex;
 }
 nav .menu {
   cursor: pointer;

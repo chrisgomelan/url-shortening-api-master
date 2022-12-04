@@ -32,15 +32,68 @@ nav{
     align-items: flex-start;
     .functions{
         position: absolute;
+        z-index: 20;
         display: none;
         flex-direction: column;
         align-items: center;
         width: 88%;
         right: 6%;
         top: 70px;
-        background-color: white;
-        outline: 2px solid blue;
-        padding: 50% 0;
+        background-color: $darkViolet;
+        padding: 15% 0;
+        text-align: center;
+        border-radius: 10px;
+       
+       *{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+     
+       }
+
+        .button-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            
+            button{
+                padding: .5rem;
+                text-align: center;
+                padding: 2% 35%;
+                color: white;
+                font-weight: 500;
+            }
+            :nth-child(1){
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+            :nth-child(2){
+                background-color: $cyan;
+                border-radius: 20px;
+                border: none;
+                transition: ease-in-out 0.3s;
+            }
+            :nth-child(2):hover{
+                background-color: $veryDarkViolet;
+            }
+        }
+        li{
+            list-style: none;
+            font-weight: 500;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    hr{
+        width: 90%;
+        margin: 1.6rem 0;
+        color: $gray;
+        height: 1px;
+    }
+    .functions.active{
+        display: flex;
     }
 
     .menu{
